@@ -4,13 +4,13 @@ body {
   margin: 0;                         /* Remove margens padrão do navegador */
   padding: 0;                        /* Remove paddings padrão */
   background-color: #f5f7fa;         /* Cor de fundo clara padrão */
-  color: #333;                       /* Cor do texto principal */
+  color: #ffc4c4;                       /* Cor do texto principal */
   line-height: 1.6;                  /* Espaçamento entre linhas */
 }
 
 /* ===== CABEÇALHO ===== */
 header {
-  background-color: #2c3e50;         /* Cor de fundo azul escuro */
+  background-color: #850a0a;         /* Cor de fundo azul escuro */
   color: white;                      /* Cor do texto */
   padding: 20px;                     /* Espaçamento interno */
   display: flex;                     /* Ativa flexbox para alinhamento */
@@ -32,7 +32,7 @@ header {
   height: 80px;                     /* Altura fixa (igual à largura para formar círculo) */
   border-radius: 50%;                /* Torna a imagem circular */
   object-fit: cover;                 /* Garante que a imagem preencha o espaço sem distorcer */
-  border: 3px solid #3498db;         /* Borda azul ao redor da imagem */
+  border: 3px solid #fab7b7;         /* Borda azul ao redor da imagem */
   box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Sombra sutil */
 }
 
@@ -54,7 +54,7 @@ button {
 }
 
 button:hover {
-  background-color: #2980b9;        /* Cor mais escura no hover */
+  background-color: #920707;        /* Cor mais escura no hover */
 }
 
 /* ===== SEÇÕES DE CONTEÚDO ===== */
