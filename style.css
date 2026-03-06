@@ -147,9 +147,9 @@ body.dark-mode .profile-img {
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
 :root {
-    --cor-primaria: #000000;
+    --cor-primaria: #920707;
     --cor-secundaria: #F6F6F6;
-    --cor-terciaria: #22D4FD;
+    --cor-terciaria: #fab7b7;
     --cor-hover: #272727;
 
     --fonte-primaria: 'Krona One', sans-serif;
@@ -246,9 +246,9 @@ body{
     font-weight: 400;
 }
 h2 {
-    color: #09110a;
+    color: #920707;
   }
 img{
-    filter: drop-shadow(1px 1px 20px yellow);
+    filter: drop-shadow(1px 1px 20px fab7b7);
     border-radius: 10px;
 }
