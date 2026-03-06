@@ -147,10 +147,28 @@ body.dark-mode .profile-img {
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
 :root {
-    --cor-primaria: #920707;
+  header {
+  background-color: #ffffff;         /* Cor de fundo azul escuro */
+  color: white;                      /* Cor do texto */
+  padding: 20px;                     /* Espaçamento interno */
+  display: flex;                     /* Ativa flexbox para alinhamento */
+  justify-content: space-between;    /* Espaço entre elementos */
+  align-items: center;               /* Centraliza verticalmente */
+  flex-wrap: wrap;                   /* Permite quebra de linha em telas pequenas */
+}
+    --cor-primaria: #ffffff;
     --cor-secundaria: #F6F6F6;
     --cor-terciaria: #fab7b7;
-    --cor-hover: #272727;
+    --cor-hover: #920707;
+
+    /* ===== RODAPÉ ===== */
+footer {
+  text-align: center;               /* Centraliza texto */
+  padding: 15px;                    /* Espaçamento interno */
+  background-color: #920707;        /* Cor igual ao header */
+  color: white;                     /* Texto branco */
+  margin-top: 30px;                 /* Espaço acima do rodapé */
+}
 
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;
