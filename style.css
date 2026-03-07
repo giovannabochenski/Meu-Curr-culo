@@ -1,271 +1,147 @@
-/*. oi =====   ajwhhedhsdjhahjdhjasdESTILOS GERAIS ===== */
+/* ===== CONFIGURAÇÕES DE FONTES E VARIÁVEIS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+  --cor-fundo-vinho: #920707;
+  --cor-header: #850a0a;
+  --cor-secao: #ffffff;
+  --cor-texto-escuro: #000000;
+  --cor-destaque-rosa: #fab7b7;
+  --fonte-primaria: 'Montserrat', sans-serif;
+  --fonte-titulo: 'Krona One', sans-serif;
+}
+
+/* ===== ESTILOS GERAIS ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'Arial', sans-serif;  /* Define a fonte padrão */
-  margin: 0;                         /* Remove margens padrão do navegador */
-  padding: 0;                        /* Remove paddings padrão */
-  background-color: #920707;         /* Cor de fundo clara padrão */
-  color: #000000;                       /* Cor do texto principal */
-  line-height: 1.6;                  /* Espaçamento entre linhas */
+  font-family: var(--fonte-primaria);
+  background-color: var(--cor-fundo-vinho);
+  color: var(--cor-texto-escuro);
+  line-height: 1.6;
+  padding-bottom: 50px;
 }
 
 /* ===== CABEÇALHO ===== */
 header {
-  background-color: #850a0a;         /* Cor de fundo azul escuro */
-  color: white;                      /* Cor do texto */
-  padding: 20px;                     /* Espaçamento interno */
-  display: flex;                     /* Ativa flexbox para alinhamento */
-  justify-content: space-between;    /* Espaço entre elementos */
-  align-items: center;               /* Centraliza verticalmente */
-  flex-wrap: wrap;                   /* Permite quebra de linha em telas pequenas */
+  background-color: var(--cor-header);
+  color: white;
+  padding: 40px 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-/* Container do conteúdo do header */
 .header-content {
-  display: flex;                     /* Layout flex para imagem + texto */
-  align-items: center;               /* Alinha itens verticalmente */
-  gap: 20px;                         /* Espaço entre imagem e texto */
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-/* Estilo da imagem de perfil */
 .profile-img {
-  width: 80px;                      /* Largura fixa */
-  height: 80px;                     /* Altura fixa (igual à largura para formar círculo) */
-  border-radius: 50%;                /* Torna a imagem circular */
-  object-fit: cover;                 /* Garante que a imagem preencha o espaço sem distorcer */
-  border: 3px solid #fab7b7;         /* Borda azul ao redor da imagem */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Sombra sutil */
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--cor-destaque-rosa);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
-/* Container do texto no header */
-.header-text {
-  text-align: left;                  /* Alinhamento à esquerda */
+.header-text h1 {
+  font-family: var(--fonte-titulo);
+  font-size: 1.8rem;
+  margin-bottom: 5px;
 }
 
-/* ===== BOTÕES ===== */
+.header-text p {
+  font-size: 0.9rem;
+  color: var(--cor-destaque-rosa);
+}
+
+/* ===== BOTÕES NO HEADER ===== */
+.header-buttons {
+  display: flex;
+  gap: 10px;
+}
+
 button {
-  margin: 5px;                       /* Espaçamento externo */
-  padding: 10px 15px;                /* Espaçamento interno */
-  background-color: #fab7b7;         /* Cor de fundo azul */
-  color: white;                      /* Cor do texto */
-  border: none;                      /* Remove borda padrão */
-  border-radius: 5px;                /* Cantos arredondados */
-  cursor: pointer;                   /* Muda cursor para pointer */
-  transition: background-color 0.3s; /* Transição suave de cor */
+  padding: 8px 15px;
+  background-color: var(--cor-destaque-rosa);
+  color: var(--cor-fundo-vinho);
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 button:hover {
-  background-color: #920707;        /* Cor mais escura no hover */
+  background-color: white;
+  transform: scale(1.05);
 }
 
-/* ===== SEÇÕES DE CONTEÚDO ===== */
+/* ===== SEÇÕES DE CONTEÚDO (OS CARDS BRANCOS) ===== */
 section {
-  max-width: 800px;                 /* Largura máxima */
-  margin: 20px auto;                /* Centraliza na página */
-  background-color: white;          /* Fundo branco */
-  padding: 20px;                    /* Espaçamento interno */
-  border-radius: 8px;               /* Cantos arredondados */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra sutil */
+  max-width: 800px;
+  margin: 30px auto;
+  background-color: var(--cor-secao);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
-/* Títulos das seções */
 h2 {
-  color: #000000;                   /* Cor azul escuro */
-  border-bottom: 2px solid #920707; /* Linha inferior azul */
-  padding-bottom: 5px;              /* Espaço entre texto e linha */
-  margin-bottom: 15px;              /* Margem inferior */
+  color: var(--cor-fundo-vinho);
+  font-family: var(--fonte-titulo);
+  font-size: 1.5rem;
+  border-bottom: 2px solid var(--cor-fundo-vinho);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
-/* Listas */
 ul {
-  padding-left: 20px;               /* Recuo para alinhar marcadores */
-  list-style-type: square;          /* Estilo dos marcadores */
+  padding-left: 20px;
+  list-style-type: square;
 }
 
-/* ===== RODAPÉ ===== */
-footer {
-  text-align: center;               /* Centraliza texto */
-  padding: 15px;                    /* Espaçamento interno */
-  background-color: #920707;        /* Cor igual ao header */
-  color: white;                     /* Texto branco */
-  margin-top: 30px;                 /* Espaço acima do rodapé */
+li {
+  margin-bottom: 8px;
 }
 
-/* ===== RESPONSIVIDADE ===== */
-@media (max-width: 600px) {
-  /* Ajustes para telas pequenas */
-  header {
-    flex-direction: column;         /* Empilha elementos verticalmente */
-    text-align: center;            /* Centraliza texto */
-  }
-  
-  .header-content {
-    flex-direction: column;        /* Empilha imagem e texto */
-    gap: 10px;                     /* Reduz espaço entre elementos */
-    margin-bottom: 15px;           /* Espaço antes dos botões */
-  }
-  
-  section {
-    margin: 10px;                  /* Reduz margens laterais */
-    padding: 15px;                 /* Reduz padding interno */
-  }
-}
-
-/* ===== MODO ESCURO ===== */
+/* ===== MODO ESCURO (OPCIONAL) ===== */
 body.dark-mode {
-  background-color: #1e1e1e;       /* Fundo escuro */
-  color: #f5f5f5;                  /* Texto claro */
-}
-
-body.dark-mode header,
-body.dark-mode footer {
-  background-color: #121212;       /* Tom mais escuro para header/footer */
+  background-color: #1a1a1a;
 }
 
 body.dark-mode section {
-  background-color: #2a2a2a;       /* Fundo cinza escuro para seções */
-  color: #f5f5f5;                  /* Texto claro */
+  background-color: #2d2d2d;
+  color: white;
 }
 
 body.dark-mode h2 {
-  color: #ffffff;                  /* Texto branco */
-  border-color: #fab7b7;           /* Borda azul claro */
+  color: var(--cor-destaque-rosa);
+  border-color: var(--cor-destaque-rosa);
 }
 
-body.dark-mode button {
-  background-color: #fab7b7;       /* Azul claro */
-  color: #000;                     /* Texto preto */
-}
-
-body.dark-mode button:hover {
-  background-color: #fab7b7;       /* Azul claro mais escuro */
-}
-
-body.dark-mode .profile-img {
-  border-color: #fab7b7;           /* Borda azul no modo escuro */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.4); /* Sombra mais visível */
-}
-
-    /* ===== RODAPÉ ===== */
-footer {
-  text-align: center;               /* Centraliza texto */
-  padding: 15px;                    /* Espaçamento interno */
-  background-color: #920707;        /* Cor igual ao header */
-  color: white;                     /* Texto branco */
-  margin-top: 30px;                 /* Espaço acima do rodapé */
-}
-
-    --fonte-primaria: 'Krona One', sans-serif;
-    --fonte-secundaria: 'Montserrat', sans-serif;
-}
-*{
-    margin: 0;
-    padding: 0;
-}
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
-
-:root {
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
   header {
-  background-color: #ffffff;         /* Cor de fundo azul escuro */
-  color: white;                      /* Cor do texto */
-  padding: 20px;                     /* Espaçamento interno */
-  display: flex;                     /* Ativa flexbox para alinhamento */
-  justify-content: space-between;    /* Espaço entre elementos */
-  align-items: center;               /* Centraliza verticalmente */
-  flex-wrap: wrap;                   /* Permite quebra de linha em telas pequenas */
-}
-    --cor-primaria: #920707;
-    --cor-secundaria: #F6F6F6;
-    --cor-terciaria: #fab7b7;
-    --cor-hover: #fab7b7;
-body{
-    box-sizing: border-box;
-    background-color: var(--cor-primaria);
-    color: var(--cor-secundaria);
-}
-.cabecalho{
-    padding: 2% 0% 0% 15%;
-}
-.cabecalho__menu{
-    display: flex;
-    gap: 80px;
-}
-.cabecalho__menu__link{
-    font-family: var(--fonte-secundaria);
-    font-size: 24px;
-    font-weight: 600;
-    color: var(--cor-terciaria);
-    text-decoration: none;
-}
-.apresentacao{
-    padding: 5% 15%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-}
-.apresentacao__conteudo{
-    width: 615px;
-    display: flex;
+    padding: 20px;
     flex-direction: column;
-    gap: 40px;
-}
-
-.apresentacao__conteudo__titulo{
-    font-size: 36px;
-    font-family: var(--fonte-primaria);
-}
-.titulo-destaque{
-    color: var(--cor-terciaria);
-}
-.apresentacao__conteudo__texto{
-    font-size: 24px;
-     text-align: justify;
-    font-family: var(--fonte-secundaria);
-}
-
-.apresentacao__links{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 32px;
-}
-.apresentacao__links__subtitulo{
-    font-family: var(--fonte-primaria);
-    font-weight: 400;
-    font-size: 24px;
-}
-.apresentacao__links__link{
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    border: 2px solid var(--cor-terciaria);
-    width: 378px;
     text-align: center;
-    border-radius: 8px;
-    font-size: 24px;
-    font-weight: 600;
-    padding: 21.5px 0;
-    text-decoration: none;
-    color: var(--cor-secundaria);
-    font-family: var(--fonte-secundaria);
-}
-.apresentacao__links__link:hover{
-    background-color: var(--cor-hover);
-}
-.rodape{
-    color: var(--cor-primaria);
-    background-color: var(--cor-terciaria);
-    padding: 24px;
-    text-align: center;
-    font-family: var(--fonte-secundaria);
-    font-size: 24px;
-    font-weight: 400;
-}
-h2 {
-    color: #920707;
   }
-img{
-    filter: drop-shadow(1px 1px 20px fab7b7);
-    border-radius: 10px;
+  
+  .header-content {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  section {
+    margin: 20px 15px;
+  }
 }
