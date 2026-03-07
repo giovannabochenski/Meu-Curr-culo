@@ -156,10 +156,10 @@ body.dark-mode .profile-img {
   align-items: center;               /* Centraliza verticalmente */
   flex-wrap: wrap;                   /* Permite quebra de linha em telas pequenas */
 }
-    --cor-primaria: #ffffff;
+    --cor-primaria: #920707;
     --cor-secundaria: #F6F6F6;
     --cor-terciaria: #fab7b7;
-    --cor-hover: #920707;
+    --cor-hover: #fab7b7;
 
     /* ===== RODAPÉ ===== */
 footer {
