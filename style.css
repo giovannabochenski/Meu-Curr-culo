@@ -161,7 +161,22 @@ footer {
     margin: 0;
     padding: 0;
 }
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
+:root {
+  header {
+  background-color: #ffffff;         /* Cor de fundo azul escuro */
+  color: white;                      /* Cor do texto */
+  padding: 20px;                     /* Espaçamento interno */
+  display: flex;                     /* Ativa flexbox para alinhamento */
+  justify-content: space-between;    /* Espaço entre elementos */
+  align-items: center;               /* Centraliza verticalmente */
+  flex-wrap: wrap;                   /* Permite quebra de linha em telas pequenas */
+}
+    --cor-primaria: #920707;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #fab7b7;
+    --cor-hover: #fab7b7;
 body{
     box-sizing: border-box;
     background-color: var(--cor-primaria);
